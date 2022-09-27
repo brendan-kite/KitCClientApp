@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kitcclientapp.HelloController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="277.0" style="-fx-background-color: #002050;">
+            <children>
+                <ImageView fitHeight="204.0" fitWidth="199.0" layoutX="40.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Images/KitC190x190.png" />
+                    </image></ImageView>
+                <Label layoutX="63.0" layoutY="200.0" text="Kite in the Clouds" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="45.0" layoutY="471.0" text="kite.in.the.clouds22@gmail.com" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="500.0" prefWidth="523.0">
+            <children>
+                <Label layoutX="78.0" layoutY="143.0" text="Email">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="59.0" layoutY="200.0" text="Password">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="tf_email" layoutX="204.0" layoutY="137.0">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="button_login" layoutX="188.0" layoutY="292.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="148.0" style="-fx-background-color: #020050;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Label layoutX="153.0" layoutY="384.0" text="Don't have an account? ">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="button_sign_up" layoutX="324.0" layoutY="379.0" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Sign up!" textFill="#020050" underline="true">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="14.0" />
+                    </font>
+                </Button>
+                <PasswordField fx:id="tf_password" layoutX="204.0" layoutY="194.0" onAction="#onEnter">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                    </font></PasswordField>
+            <Label layoutX="153.0" layoutY="51.0" text="Log In or Sign Up" textFill="#020050">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            </children></AnchorPane>
+    </children>
+</HBox>
